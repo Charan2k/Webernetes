@@ -1,0 +1,112 @@
+
+body {
+  /* background: linear-gradient(45deg, #30b0ec 0%,#1f7cd3 100%); */
+  background: black;
+  font-family: 'Ubuntu';
+}
+
+.terminal{
+    width: 90%;
+    left: 70px;
+    height: auto;
+    position: absolute;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.terminal-main{
+    background-color: rgb(73, 73, 73);
+    /* transform: translate(-50%,20%); */
+}
+.title-bar{
+    font-size: small;
+    background: rgb(29, 49, 228);
+    transform: translate(-50%,50%);
+    top: 3%;
+    left: 50%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.host{
+    color: lime;
+}
+
+.output{
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    background: none;
+    outline: none;
+    border: none;
+    font-style: 'Ubuntu';
+    font-size: 15px;
+    padding-top: 0px;
+    padding-left: 10px;
+}
+
+.btn{
+    background: none;
+    outline: none;
+    border: 1px solid yellow;
+    border-radius: 25px 10px;
+    cursor: pointer;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    font-family: 'Ubuntu mono';
+    height: 50px;
+    width: 100px;
+    color: white;
+}
+
+.btn:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+.box1{
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.box2{
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.box3{
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.command-buttons{
+    padding-top: 100px;
+    position: relative;
+    display: flex;
+}
+
+.inputbox{
+    background: none;
+    outline: none;
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    color:white;
+    font-family: 'Ubuntu mono';
+    font-size: 20px;
+}
+
+.inputbox:hover{
+    background-color: rgb(15, 110, 199);
+}
+
+.command{
+    position: relative;
+    margin-top: 20px;
+    /* margin-bottom: -40px; */
+    left: 140px;
+}
+
+
+.command input{
+    width: 70%;
+}

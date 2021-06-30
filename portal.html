@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/terminal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <script src="js/terminal.js"></script>
+    <title>Kubernetes | Portal</title>
+</head>
+<body>
+    <div class="containers">
+        <div class="terminal title-bar">
+            Webernetes
+        </div>
+        <div class="command-buttons">
+            <div class="box1">
+                <button class="btn images" onclick="showImages()">
+                    Show Images
+                </button>
+                <button class="btn containers" onclick="showPods()">
+                    Show Pods
+                </button>
+            </div>
+            <input type="text" id="imgname" placeholder="image name" class="inputbox">
+            <div class="box2">
+                <button class="btn deleteImg" onclick="downloadImage()">
+                    Download an Image
+                </button>
+                <button class="btn deleteImg" onclick="deleteImage()">
+                    Delete an Image
+                </button>
+            </div>
+            <div class="box3">
+                <input type="text" id="cimgname" placeholder="image name" class="inputbox">
+                <input type="text" id="contname" placeholder="container name/id name" class="inputbox">
+                <button class="btn deleteCont" onclick="runPod()">
+                    Launch a Pod
+                </button>
+                <button class="btn deleteCont" onclick="delPod()">
+                    Delete a Pod
+                </button>
+            </div>
+        </div>
+        <div class="command">
+            <input type="text" id="command" class="inputbox"> <button class="btn" onclick="runCommand()"> RUN</button>
+        </div>
+        <div class="terminal terminal-main">
+            <div class="commands">
+                <span class="host">
+                    Kube-Console $
+                </span>
+                <!-- <input type="text" class="output" id="output" onkeypress="hehe()"> -->
+                <pre>
+                    <div class="output" id="output">
+                    </div>
+                </pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
